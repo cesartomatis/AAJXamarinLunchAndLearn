@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 	xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				x:Class="AAJXamarinSample.MyPage">
+
+	<ContentPage.Padding>
+    <OnPlatform x:TypeArguments = "Thickness"
+                iOS ="0,20,0,0"/>
+  	</ContentPage.Padding>
+
+	<StackLayout 	Orientation="Vertical"
+					VerticalOptions="FillAndExpand"
+					HorizontalOptions="FillAndExpand"
+					BackgroundColor="White">
+
+		<Label 	Text="Welcome to Xamarin Forms!"
+				TextColor="Accent"
+				FontSize="46"
+			  	HorizontalOptions="CenterAndExpand"
+			  	VerticalOptions="CenterAndExpand"
+			  	XAlign="Center"/>
+
+	</StackLayout>
+
+</ContentPage>
