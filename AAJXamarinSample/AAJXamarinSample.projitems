@@ -17,12 +17,19 @@
       <DependentUpon>MyPageWithCustomRenderers.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)CustomLabel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MyPageWithViewModel.xaml.cs">
+      <DependentUpon>MyPageWithViewModel.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyPageWithCustomRenderers.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyPageWithViewModel.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage	xmlns="http://xamarin.com/schemas/2014/forms" 
+				xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+				x:Class="AAJXamarinSample.MyPageWithViewModel"
+				xmlns:viewModels="clr-namespace:AAJXamarinSample;assembly=AAJXamarinSample">
+
+	<ContentPage.BindingContext>
+    	<viewModels:MyViewModel/>
+  	</ContentPage.BindingContext>
+
+	<ContentPage.Padding>
+    <OnPlatform x:TypeArguments = "Thickness"
+                iOS ="0,20,0,0"/>
+  	</ContentPage.Padding>
+
+	<StackLayout 	Orientation="Vertical"
+					VerticalOptions="FillAndExpand"
+					HorizontalOptions="FillAndExpand"
+					BackgroundColor="White">
+
+		<Label 	Text="{Binding LblText}"
+				TextColor="Accent"
+				FontSize="46"
+			  	HorizontalOptions="CenterAndExpand"
+			  	VerticalOptions="CenterAndExpand"
+			  	XAlign="Center"/>
+
+	</StackLayout>
+
+</ContentPage>
