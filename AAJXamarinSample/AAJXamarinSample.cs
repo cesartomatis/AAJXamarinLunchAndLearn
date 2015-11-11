@@ -9,10 +9,13 @@ namespace AAJXamarinSample
 		public App ()
 		{
 			//Pagina creada con C# desde 
-			MainPage = new MyPageWithoutXAML();
+			//MainPage = new MyPageWithoutXAML();
 
 			//Pagina levantada desde xaml usando Xamarin.Forms al 100%
 			//MainPage = new MyPage();
+
+			//Pagina levantada desde xaml usando Xamarin.Forms y Code-Behind
+			MainPage = new MyPageWithCodeBehind();
 
 			//Pagina levantada desde xaml usando Xamarin.Forms y MVVM
 			//MainPage = new MyPageWithViewModel();

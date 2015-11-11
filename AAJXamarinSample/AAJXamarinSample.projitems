@@ -21,6 +21,9 @@
     <Compile Include="$(MSBuildThisFileDirectory)MyPageWithViewModel.xaml.cs">
       <DependentUpon>MyPageWithViewModel.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)MyPageWithCodeBehind.xaml.cs">
+      <DependentUpon>MyPageWithCodeBehind.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyPage.xaml">
@@ -30,6 +33,9 @@
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyPageWithViewModel.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MyPageWithCodeBehind.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
